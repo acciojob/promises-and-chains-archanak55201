@@ -15,13 +15,17 @@ btn.addEventListener("click",(e)=>{
 			},4000)
 		}else{
 			setTimeout(()=>{
-				reject(name);
+				try{
+					reject(name);
+				}catch(e){
+					
+				}
 			},4000)
 		}
 		
 	})
 	prom.then((data)=>{
-		alert("Welcome, "+data+". You can vote");
+		alert("Welcome, "+data+". You can vote.");
 	})
 	prom.catch((data)=>{
 		alert("Oh sorry "+data+". You aren't old enough");
