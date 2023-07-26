@@ -21,10 +21,10 @@ btn.addEventListener("click",(e)=>{
 		
 	})
 	prom.then((data)=>{
-		alert("Welcome, "+data+".You can Vote");
+		alert("Welcome, "+data+". You can vote");
 	})
 	prom.catch((data)=>{
-		alert("Oh sorry "+data+".You aren't old enough");
+		alert("Oh sorry "+data+". You aren't old enough");
 	})
 	
 })
