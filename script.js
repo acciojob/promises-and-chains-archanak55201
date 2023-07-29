@@ -7,7 +7,7 @@ btn.addEventListener("click",(e)=>{
 	
 	 name=document.getElementById("name").value;
 	 age=document.getElementById("age").value;
-	try{
+
 	let prom=new Promise((resolve,reject)=>{
 		if(age>18){
 			setTimeout(()=>{
@@ -20,7 +20,6 @@ btn.addEventListener("click",(e)=>{
 		}
 		
 	})
-	}catch(e) {}
 	prom.then((data)=>{
 		alert("Welcome, "+data+". You can vote.");
 	})
